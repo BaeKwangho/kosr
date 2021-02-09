@@ -1,4 +1,4 @@
-import se.models.EnhanceModel as EnhanceModel
+from se.models.EnhanceModel import EnhanceModel
 
 def build_model(conf):
     model_type = conf['setting']['model_type']
@@ -11,7 +11,7 @@ def build_model(conf):
     
     model_conf = conf['se_model']
     
-    generator = model.Generator(conf)
-    discriminator = model.Discriminator(conf)
+    generator = model.Generator(model_conf)
+    discriminator = model.Discriminator(model_conf)
     
     return EnhanceModel(generator,discriminator).to(device)

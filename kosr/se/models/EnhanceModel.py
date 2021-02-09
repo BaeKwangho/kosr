@@ -8,3 +8,8 @@ class EnhanceModel(nn.Module):
         
         self.discriminator = discriminator
         self.generator = generator
+        
+        
+        
+    def forward(self,f):
+        x

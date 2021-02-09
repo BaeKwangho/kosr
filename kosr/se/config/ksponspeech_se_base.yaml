@@ -10,19 +10,12 @@ setting:
   device: 'cuda'
 
 se_model:
-  out_dim: ???
-  in_dim: 80
-  feat_extractor: 'vgg'
-  enc_n_layers: 12
-  dec_n_layers: 6
-  hidden_dim: 512 
-  filter_dim: 2048
-  n_head: 8
-  dropout_rate: 0.1
-  max_len: 150
-  pad_id: 0
-  sos_id: 1 
-  eos_id: 2
+  #out_channel: ???
+  #in_channel: 2
+  #kernel_size: 31
+  #stride : 2
+  dis_n_layers: 11
+  gen_n_layers: 11
 
 optimizer:
   d_model: 512
